@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ControllerHome;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/Zayshop', [ControllerHome::class, 'index']);
+Route::get('/Zayshop/shop', [ControllerHome::class, 'shop']);
+Route::get('/Zayshop/shop/shop-single', [ControllerHome::class, 'shop_single']);
