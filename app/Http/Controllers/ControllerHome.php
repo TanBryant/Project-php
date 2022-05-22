@@ -12,8 +12,17 @@ class ControllerHome extends Controller
     {
         return view('Zayshop.shop');
     }
+    public function about()
+    {
+        return view('Zayshop.about');
+    }
+   
     public function shop_single()
     {
         return view('Zayshop.shop-single');
+    } 
+    public function contact()
+    {
+        return view('Zayshop.contact');
     }
 }
