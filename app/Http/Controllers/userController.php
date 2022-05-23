@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 
+use App\Http\Controllers\dedirect;
+
 class userController extends Controller
 {
     public function tableList()
@@ -15,26 +17,28 @@ class userController extends Controller
 
     public function store(Request $request)
     {
-        $input = $request->all();
-        User::create($input);
-        return redirect('user')->with('flash_message', 'user Addedd!');
+
+        User::create($request->all());
+        return redirect()->back();
     }
 
 
-    // public function edit($id)
-    // {
-    //     $student = Student::find($id);
-    //     return view('students.edit')->with('students', $student);
-    // }
+    public function edit($id)
+    {
+
+        $user = User::find($id);
+        //dd($user);
+        return view('Admin.pages.forms.edit', compact(['user']));
+    }
 
 
-    // public function update(Request $request, $id)
-    // {
-    //     $student = Student::find($id);
-    //     $input = $request->all();
-    //     $student->update($input);
-    //     return redirect('student')->with('flash_message', 'student Updated!');
-    // }
+    public function update(Request $request, $id)
+    {
+        $user = User::find($id);
+        $user->update($request->all());
+        return redirect()->back();
+        // return dedirect('/Admin/table');
+    }
 
 
     public function destroy($id)
