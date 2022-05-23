@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ControllerHome;
 use App\Http\Controllers\ControllerAdmin;
 use App\Http\Controllers\userController;
+use App\Http\Controllers\LoginController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,11 +23,12 @@ Route::get('/Zayshop/about', [ControllerHome::class, 'about']);
 Route::get('/Zayshop/shop', [ControllerHome::class, 'shop']);
 Route::get('/Zayshop/contact', [ControllerHome::class, 'contact']);
 Route::get('/Zayshop/shop/shop-single', [ControllerHome::class, 'shop_single']);
+Route::get('/Zayshop/login',[LoginController::class, 'viewLogin']);
 
 
 //-- route admin
 Route::get('/Admin', [ControllerAdmin::class, 'indexAdmin']);
 Route::get('/Admin/formAdd', [ControllerAdmin::class, 'formAdd']); 
 Route::get('/Admin/table', [userController::class, 'tableList']); 
-Route::get('/Admin/store', [userController::class, 'store']); 
+Route::post('/Admin/store', [userController::class, 'store']); 
  

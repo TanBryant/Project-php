@@ -381,7 +381,7 @@
                      
                     <form class="forms-sample" 
                     action="{{ url('/Admin/store') }}" 
-                    method="GET">
+                    method="POST">
                     {!! csrf_field() !!}
                       <div class="form-group">
                         <label for="exampleInputUsername1">Username</label>

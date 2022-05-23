@@ -15,26 +15,26 @@ class userController extends Controller
       
         public function store(Request $request)
         {
-            $input = $request->all();
-            User::create($input);
-            return redirect('user')->with('flash_message', 'user Addedd!');  
+            
+            User::create($request->all());
+            return redirect()->back();
         } 
      
         
-        public function edit($id)
-        {
-            $student = Student::find($id);
-            return view('students.edit')->with('students', $student);
-        }
+        // public function edit($id)
+        // {
+        //     // $student = Student::find($id);
+        //     return view('students.edit')->with('students', $student);
+        // }
      
       
-        public function update(Request $request, $id)
-        {
-            $student = Student::find($id);
-            $input = $request->all();
-            $student->update($input);
-            return redirect('student')->with('flash_message', 'student Updated!');  
-        }
+        // public function update(Request $request, $id)
+        // {
+        //     $student = Student::find($id);
+        //     $input = $request->all();
+        //     $student->update($input);
+        //     return redirect('student')->with('flash_message', 'student Updated!');  
+        // }
      
        
         public function destroy($id)
