@@ -16,4 +16,5 @@ mix.js("resources/js/app.js", "public/js")
         //
     ])
     .css("resources/css/custom.css", "public/css")
-    .copyDirectory("resources/views/Zayshop/assets/", "public/assets/");
+    .copyDirectory("resources/views/Zayshop/assets/", "public/assets/")
+    .copyDirectory("resources/views/Admin/assets/", "public/assets/");

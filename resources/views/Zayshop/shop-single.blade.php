@@ -16,11 +16,11 @@
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="{{@asset('assets/css/fontawesome.min.css')}}">
 
     <!-- Slick -->
-    <link rel="stylesheet" type="text/css" href="assets/css/slick.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="{{@asset('assets/css/slick.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{@asset('assets/css/slick-theme.css')}}">
     <!--
     
 TemplateMo 559 Zay Shop
@@ -369,7 +369,7 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="p-2 pb-3">
                     <div class="product-wap card rounded-0">
                         <div class="card rounded-0">
-                            <img class="card-img rounded-0 img-fluid" src="assets/img/shop_09.jpg">
+                            <img class="card-img rounded-0 img-fluid" src="{{@asset('assets/img/shop_09.jpg')}}">
                             <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                 <ul class="list-unstyled">
                                     <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
@@ -445,7 +445,7 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="p-2 pb-3">
                     <div class="product-wap card rounded-0">
                         <div class="card rounded-0">
-                            <img class="card-img rounded-0 img-fluid" src="assets/img/shop_11.jpg">
+                            <img class="card-img rounded-0 img-fluid" src="{{@asset('assets/img/shop_11.jpg')}}">
                             <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                 <ul class="list-unstyled">
                                     <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
@@ -483,7 +483,7 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="p-2 pb-3">
                     <div class="product-wap card rounded-0">
                         <div class="card rounded-0">
-                            <img class="card-img rounded-0 img-fluid" src="assets/img/shop_08.jpg">
+                            <img class="card-img rounded-0 img-fluid" src="{{@asset('assets/img/shop_11.jpg')}}">
                             <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                 <ul class="list-unstyled">
                                     <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
@@ -521,7 +521,7 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="p-2 pb-3">
                     <div class="product-wap card rounded-0">
                         <div class="card rounded-0">
-                            <img class="card-img rounded-0 img-fluid" src="assets/img/shop_09.jpg">
+                            <img class="card-img rounded-0 img-fluid" src="{{@asset('assets/img/shop_09.jpg')}}">
                             <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                 <ul class="list-unstyled">
                                     <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
@@ -559,7 +559,7 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="p-2 pb-3">
                     <div class="product-wap card rounded-0">
                         <div class="card rounded-0">
-                            <img class="card-img rounded-0 img-fluid" src="assets/img/shop_10.jpg">
+                            <img class="card-img rounded-0 img-fluid" src="{{@asset('assets/img/shop_10.jpg')}}">
                             <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                 <ul class="list-unstyled">
                                     <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
@@ -597,7 +597,7 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="p-2 pb-3">
                     <div class="product-wap card rounded-0">
                         <div class="card rounded-0">
-                            <img class="card-img rounded-0 img-fluid" src="assets/img/shop_11.jpg">
+                            <img class="card-img rounded-0 img-fluid" src="{{@asset('assets/img/shop_11.jpg')}}">
                             <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                 <ul class="list-unstyled">
                                     <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
@@ -635,7 +635,7 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="p-2 pb-3">
                     <div class="product-wap card rounded-0">
                         <div class="card rounded-0">
-                            <img class="card-img rounded-0 img-fluid" src="assets/img/shop_08.jpg">
+                            <img class="card-img rounded-0 img-fluid" src="{{@asset('assets/img/shop_08.jpg')}}">
                             <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                 <ul class="list-unstyled">
                                     <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
@@ -673,7 +673,7 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="p-2 pb-3">
                     <div class="product-wap card rounded-0">
                         <div class="card rounded-0">
-                            <img class="card-img rounded-0 img-fluid" src="assets/img/shop_09.jpg">
+                            <img class="card-img rounded-0 img-fluid" src="{{@asset('assets/img/shop_09.jpg')}}">
                             <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                 <ul class="list-unstyled">
                                     <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
@@ -711,7 +711,7 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="p-2 pb-3">
                     <div class="product-wap card rounded-0">
                         <div class="card rounded-0">
-                            <img class="card-img rounded-0 img-fluid" src="assets/img/shop_10.jpg">
+                            <img class="card-img rounded-0 img-fluid" src="{{@asset('assets/img/shop_10.jpg')}}">
                             <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                 <ul class="list-unstyled">
                                     <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
@@ -749,7 +749,7 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="p-2 pb-3">
                     <div class="product-wap card rounded-0">
                         <div class="card rounded-0">
-                            <img class="card-img rounded-0 img-fluid" src="assets/img/shop_11.jpg">
+                            <img class="card-img rounded-0 img-fluid" src="{{@asset('assets/img/shop_11.jpg')}}">
                             <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                 <ul class="list-unstyled">
                                     <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
