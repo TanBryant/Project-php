@@ -9,11 +9,13 @@
 </head>
 
 <body>
-  <div class="card">
+  <div class="card" style="WIDTH: 500PX;
+    POSITION: absolute;
+    right: 32%;">
     <div class="card-body">
       <h3 class="card-title">Edit user</h3>
 
-      <form class="forms-sample" action="{{ url('Admin/$user->id') }}" method="POST">
+      <form class="forms-sample" action="{{ url('Admin/'.$user->id) }}" method="POST">
         @method('put')
         {!! csrf_field() !!}
         <div class="form-group">

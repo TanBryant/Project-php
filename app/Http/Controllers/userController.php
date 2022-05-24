@@ -34,10 +34,9 @@ class userController extends Controller
 
     public function update(Request $request, $id)
     {
-        $user = User::find($id);
+        $user = User::findOrFail($id);
         $user->update($request->all());
-        return redirect()->back();
-        // return dedirect('/Admin/table');
+        return redirect('/Admin/table');
     }
 
 
