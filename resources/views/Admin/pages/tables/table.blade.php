@@ -405,11 +405,11 @@
                                                     <td>{{ $item->phone }}</td>
                                                     <td> <a href="{{ url('/Admin/' . $item->id . '/edit') }}" title="Edit User"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
 
-                                                        <form method="GET" action="{{ url('/Admin/edit' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
-                                                            {{ method_field('DELETE') }}
-                                                            {{ csrf_field() }}
-                                                            <!-- <button type="submit" class="btn btn-danger btn-sm" title="Delete" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i>
-                                                                Delete</button> -->
+                                                        <form method="POST" action="{{ url('/Admin/user' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
+                                                            @csrf
+                                                            @method('DELETE')
+                                                            <button type="submit" class="btn btn-danger btn-sm" title="Delete"><i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                                Delete</button>
                                                         </form>
                                                     </td>
                                                 </tr>

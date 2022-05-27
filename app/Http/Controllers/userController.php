@@ -5,9 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 
-use App\Http\Controllers\dedirect;
-
-class userController extends Controller
+class UserController extends Controller
 {
     public function tableList()
     {
@@ -17,7 +15,9 @@ class userController extends Controller
 
     public function store(Request $request)
     {
-
+        $validate = $request->validate([
+            'username' => 'required|max:255'
+        ]);
         User::create($request->all());
         return redirect()->back();
     }
@@ -42,7 +42,9 @@ class userController extends Controller
 
     public function destroy($id)
     {
-        User::destroy($id);
-        return redirect('user')->with('flash_message', 'user deleted!');
+        $user = User::find($id);
+        if ($user)
+            $user->delete();
+        return redirect('/Admin/table');
     }
 }

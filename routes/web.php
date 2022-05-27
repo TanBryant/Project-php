@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ControllerHome;
-use App\Http\Controllers\ControllerAdmin;
-use App\Http\Controllers\userController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\LoginController;
 
 /*
@@ -20,18 +20,19 @@ use App\Http\Controllers\LoginController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/Zayshop', [ControllerHome::class, 'index']);
-Route::get('/Zayshop/about', [ControllerHome::class, 'about']);
-Route::get('/Zayshop/shop', [ControllerHome::class, 'shop']);
-Route::get('/Zayshop/contact', [ControllerHome::class, 'contact']);
-Route::get('/Zayshop/shop/shop-single', [ControllerHome::class, 'shop_single']);
-Route::get('/Zayshop/login', [LoginController::class, 'viewLogin']);
+Route::get('/Zayshop', [HomeController::class, 'index']);
+Route::get('/Zayshop/about', [HomeController::class, 'about']);
+Route::get('/Zayshop/shop', [HomeController::class, 'shop']);
+Route::get('/Zayshop/contact', [HomeController::class, 'contact']);
+Route::get('/Zayshop/shop/shop-single', [HomeController::class, 'shop_single']);
+Route::get('/Zayshop/login', [HomeController::class, 'viewLogin']);
 
 
 //-- route admin
-Route::get('/Admin', [ControllerAdmin::class, 'indexAdmin']);
-Route::get('/Admin/formAdd', [ControllerAdmin::class, 'formAdd']);
-Route::get('/Admin/table', [userController::class, 'tableList']);
-Route::post('/Admin/store', [userController::class, 'store']);
-Route::get('/Admin/{id}/edit', [userController::class, 'edit']);
-Route::put('/Admin/{id}', [userController::class, 'update']);
+Route::get('/Admin', [AdminController::class, 'indexAdmin']);
+Route::get('/Admin/formAdd', [AdminController::class, 'formAdd']);
+Route::get('/Admin/table', [UserController::class, 'tableList']);
+Route::post('/Admin/store', [UserController::class, 'store']);
+Route::get('/Admin/{id}/edit', [UserController::class, 'edit']);
+Route::put('/Admin/{id}', [UserController::class, 'update']);
+Route::delete('/Admin/user/{id}', [UserController::class, 'destroy']);

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-class ControllerAdmin extends Controller
+class AdminController extends Controller
 {
     public function indexAdmin()
     {
