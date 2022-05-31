@@ -69,10 +69,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-4 mb-4">
+            <div class="col-12 col-md-3 mb-3">
                 <div class="card h-100">
                     <a href="shop-single.html">
-                        <img src="{{ asset('./assets/img/feature_prod_01.jpg')}}" class="card-img-top" alt="...">
+                        <img src="https://product.hstatic.net/1000003969/product/xanh_txn574_2_981981b2de0141858662a8f695c378bf.jpg" class="card-img-top" alt="...">
                     </a>
                     <div class="card-body">
                         <ul class="list-unstyled d-flex justify-content-between">
@@ -83,9 +83,9 @@
                                 <i class="text-muted fa fa-star"></i>
                                 <i class="text-muted fa fa-star"></i>
                             </li>
-                            <li class="text-muted text-right">$240.00</li>
+                            <li class="text-muted text-right">$900.00</li>
                         </ul>
-                        <a href="shop-single.html" class="h2 text-decoration-none text-dark">Gym Weight</a>
+                        <a href="shop-single.html" class="h2 text-decoration-none text-dark">Handbag Decoration Knotted Buckle</a>
                         <p class="card-text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.
                         </p>
@@ -93,10 +93,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4 mb-4">
+            <div class="col-12 col-md-3 mb-3">
                 <div class="card h-100">
                     <a href="shop-single.html">
-                        <img src="{{ asset('./assets/img/feature_prod_02.jpg')}}" class="card-img-top" alt="...">
+                        <img src="https://product.hstatic.net/1000003969/product/xam-xanh_sd07072_1_1181f5016b5a4102842f13ad18ad35d2_grande.jpg" class="card-img-top" alt="...">
                     </a>
                     <div class="card-body">
                         <ul class="list-unstyled d-flex justify-content-between">
@@ -107,9 +107,9 @@
                                 <i class="text-muted fa fa-star"></i>
                                 <i class="text-muted fa fa-star"></i>
                             </li>
-                            <li class="text-muted text-right">$480.00</li>
+                            <li class="text-muted text-right">$440.00</li>
                         </ul>
-                        <a href="shop-single.html" class="h2 text-decoration-none text-dark">Cloud Nike Shoes</a>
+                        <a href="shop-single.html" class="h2 text-decoration-none text-dark"> Square Toe Sandal Shoes</a>
                         <p class="card-text">
                             Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.
                         </p>
@@ -117,10 +117,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4 mb-4">
+            <div class="col-12 col-md-3 mb-3">
                 <div class="card h-100">
                     <a href="shop-single.html">
-                        <img src="{{ asset('./assets/img/feature_prod_03.jpg')}}" class="card-img-top" alt="...">
+                        <img src="https://product.hstatic.net/1000003969/product/caro-do_jndng007_2_8c69cb2773ac49bd9382624803e9818b_grande.jpg" class="card-img-top" alt="...">
                     </a>
                     <div class="card-body">
                         <ul class="list-unstyled d-flex justify-content-between">
@@ -131,9 +131,33 @@
                                 <i class="text-warning fa fa-star"></i>
                                 <i class="text-warning fa fa-star"></i>
                             </li>
-                            <li class="text-muted text-right">$360.00</li>
+                            <li class="text-muted text-right">$330.00</li>
                         </ul>
-                        <a href="shop-single.html" class="h2 text-decoration-none text-dark">Summer Addides Shoes</a>
+                        <a href="shop-single.html" class="h2 text-decoration-none text-dark">Diagonal Short Neck Vest Dress</a>
+                        <p class="card-text">
+                            Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.
+                        </p>
+                        <p class="text-muted">Reviews (74)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 mb-3">
+                <div class="card h-100">
+                    <a href="shop-single.html">
+                        <img src="https://product.hstatic.net/1000003969/product/den_jnqda006_2_8b72564409cc43b9912cb0babe499737_grande.jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <ul class="list-unstyled d-flex justify-content-between">
+                            <li>
+                                <i class="text-warning fa fa-star"></i>
+                                <i class="text-warning fa fa-star"></i>
+                                <i class="text-warning fa fa-star"></i>
+                                <i class="text-warning fa fa-star"></i>
+                                <i class="text-warning fa fa-star"></i>
+                            </li>
+                            <li class="text-muted text-right">$540.00</li>
+                        </ul>
+                        <a href="shop-single.html" class="h2 text-decoration-none text-dark">Button Open Loose Long Pants</a>
                         <p class="card-text">
                             Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.
                         </p>

@@ -100,10 +100,11 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="card mb-4 product-wap rounded-0">
+                     @foreach($product as $key)
+                    <div class="col-md-4">  
+                        <div class="card mb-4 product-wap rounded-0">  
                             <div class="card rounded-0">
-                                <img class="card-img rounded-0 img-fluid" src="{{@asset('assets/img/shop_01.jpg')}}">
+                                <img class="card-img rounded-0 img-fluid" src="{{$key->img}}">
                                 <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                     <ul class="list-unstyled">
                                         <li><a class="btn btn-success text-white" href="{{ url('/Zayshop/shop/shop-single') }}"><i class="far fa-heart"></i></a></li>
@@ -113,7 +114,7 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <a href="shop-single.html" class="h3 text-decoration-none">Oupidatat non</a>
+                                <a href="shop-single.html" class="h3 text-decoration-none">{{ $key->name }}</a>
                                 <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                                     <li>M/L/X/XL</li>
                                     <li class="pt-2">
@@ -133,11 +134,12 @@
                                         <i class="text-muted fa fa-star"></i>
                                     </li>
                                 </ul>
-                                <p class="text-center mb-0">$250.00</p>
-                            </div>
-                        </div>
+                                <p class="text-center mb-0">{{ $key->price}} $ </p>
+                            </div>  
+                        </div> 
                     </div>
-                    <div class="col-md-4">
+                    @endforeach
+                    <!-- <div class="col-md-4">
                         <div class="card mb-4 product-wap rounded-0">
                             <div class="card rounded-0">
                                 <img class="card-img rounded-0 img-fluid" src="{{@asset('assets/img/shop_02.jpg')}}">
@@ -432,7 +434,7 @@
                                 <p class="text-center mb-0">$250.00</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div div="row">
                     <ul class="pagination pagination-lg justify-content-end">
@@ -570,4 +572,4 @@
     <script src="{{@asset('assets/js/custom.js')}}"></script>
     <!-- End Script -->
 </body>
-< /html>
+</html>

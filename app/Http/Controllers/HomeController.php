@@ -3,18 +3,18 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
-
+use App\Models\Product;
 class HomeController extends Controller
 
 {
     public function index()
     {
         $categories = Category::all();
-        return view('Zayshop.index')->with('categories', $categories);;
+        return view('Zayshop.index')->with('categories', $categories);
     }
     public function shop()
-    {
-        return view('Zayshop.shop');
+    {$product = Product::all();
+        return view('Zayshop.shop')->with('product', $product);
     }
     public function about()
     {
