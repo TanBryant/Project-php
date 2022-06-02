@@ -134,7 +134,7 @@
                                         <i class="text-muted fa fa-star"></i>
                                     </li>
                                 </ul>
-                                <p class="text-center mb-0">{{ $key->price}} $ </p>
+                                <p class="text-center mb-0">${{$key->price}}</p>
                             </div>  
                         </div> 
                     </div>

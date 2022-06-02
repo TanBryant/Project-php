@@ -10,6 +10,6 @@ class AdminController extends Controller
     }
     public function formAdd()
     {
-        return view('Admin.pages.forms.basic_elements');
-    }
+        return view('Admin.pages.forms.addUser');
+    }                               
 }

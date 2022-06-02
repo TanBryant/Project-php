@@ -4,85 +4,14 @@
     >
         <!-- <a class="sidebar-brand brand-logo" href="{{url('/Admin')}}"><img src="{{@asset('/assets/images/logo.svg')}}" alt="logo" /></a> -->
         <a
-            class="navbar-brand text-success logo h1 align-self-center"
-            href="{{ url('/Admin') }}"
+            class="sidebar-brand brand-logo text-success logo h1 align-self-center"
+            href="{{ '/Admin' }}" style="text-decoration: none;"
         >
-            Zay
+            Zayshop Admin
         </a>
-        <a class="sidebar-brand brand-logo-mini" href="{{url('/Admin')}}"
-            ><img src="{{@asset('/assets/images/logo-mini.svg')}}" alt="logo"
-        /></a>
+        <a class="sidebar-brand brand-logo-mini text-success align-self-center" style="text-decoration: none;" href="{{'/Admin'}}"> Z</a>
     </div>
-    <ul class="nav">
-        <li class="nav-item profile">
-            <div class="profile-desc">
-                <div class="profile-pic">
-                    <div class="count-indicator">
-                        <img
-                            class="img-xs rounded-circle"
-                            src="{{@asset('/assets/images/faces/face15.jpg')}}"
-                            alt=""
-                        />
-                        <span class="count bg-success"></span>
-                    </div>
-                    <div class="profile-name">
-                        <h5 class="mb-0 font-weight-normal">Henry Klein</h5>
-                        <span>Gold Member</span>
-                    </div>
-                </div>
-                <a href="#" id="profile-dropdown" data-toggle="dropdown"
-                    ><i class="mdi mdi-dots-vertical"></i
-                ></a>
-                <div
-                    class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list"
-                    aria-labelledby="profile-dropdown"
-                >
-                    <a href="#" class="dropdown-item preview-item">
-                        <div class="preview-thumbnail">
-                            <div class="preview-icon bg-dark rounded-circle">
-                                <i class="mdi mdi-settings text-primary"></i>
-                            </div>
-                        </div>
-                        <div class="preview-item-content">
-                            <p class="preview-subject ellipsis mb-1 text-small">
-                                Account settings
-                            </p>
-                        </div>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item preview-item">
-                        <div class="preview-thumbnail">
-                            <div class="preview-icon bg-dark rounded-circle">
-                                <i class="mdi mdi-onepassword text-info"></i>
-                            </div>
-                        </div>
-                        <div class="preview-item-content">
-                            <p class="preview-subject ellipsis mb-1 text-small">
-                                Change Password
-                            </p>
-                        </div>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item preview-item">
-                        <div class="preview-thumbnail">
-                            <div class="preview-icon bg-dark rounded-circle">
-                                <i
-                                    class="mdi mdi-calendar-today text-success"
-                                ></i>
-                            </div>
-                        </div>
-                        <div class="preview-item-content">
-                            <p class="preview-subject ellipsis mb-1 text-small">
-                                To-do list
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </li>
-        <li class="nav-item nav-category">
-            <span class="nav-link">Navigation</span>
-        </li>
+    <ul class="nav">  
         <li class="nav-item menu-items">
             <a class="nav-link" href="index.html">
                 <span class="menu-icon">
@@ -102,7 +31,7 @@
                 <span class="menu-icon">
                     <i class="mdi mdi-laptop"></i>
                 </span>
-                <span class="menu-title">Basic UI Elements</span>
+                <span class="menu-title">Product</span>
                 <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="ui-basic">
@@ -110,22 +39,22 @@
                     <li class="nav-item">
                         <a
                             class="nav-link"
-                            href="pages/ui-features/buttons.html"
-                            >Buttons</a
+                            href="{{ url('/Admin/productTable') }}"
+                            >Product List</a
                         >
                     </li>
                     <li class="nav-item">
                         <a
                             class="nav-link"
                             href="pages/ui-features/dropdowns.html"
-                            >Dropdowns</a
+                            >1</a
                         >
                     </li>
                     <li class="nav-item">
                         <a
                             class="nav-link"
                             href="pages/ui-features/typography.html"
-                            >Typography</a
+                            >2</a
                         >
                     </li>
                 </ul>
@@ -140,7 +69,7 @@
             </a>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" href="{{ url('/Admin/table') }}">
+            <a class="nav-link" href="{{ url('/Admin/userTable') }}">
                 <span class="menu-icon">
                     <i class="mdi mdi-table-large"></i>
                 </span>

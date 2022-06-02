@@ -9,4 +9,7 @@ class LoginController extends Controller
     public function viewLogin () {
         return view("Zayshop.login");
     }
+    public function AdminLogin () {
+        return view("Login.AdminLogin");
+    }
 }

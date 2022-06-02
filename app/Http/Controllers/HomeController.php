@@ -28,8 +28,14 @@ class HomeController extends Controller
     public function contact()
     {
         return view('Zayshop.contact');
+    } 
+    
+    public function cartView()
+    {
+        return view('Zayshop.partials.cart');
     }
 
-    ////
+   
+
 
 }
