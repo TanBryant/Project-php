@@ -13,34 +13,9 @@
     <link rel="stylesheet" href="{{@asset('/assets/css/templatemo.css')}}">
     <link rel="stylesheet" href="{{@asset('/assets/css/custom.css')}}">
     <link rel="stylesheet" href="{{@asset('assets/css/fontawesome.min.css')}}">
-
-    <!-- Load fonts style after rendering the layout styles -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="{{@asset('assets/css/fontawesome.min.css')}}">
-
-    <!-- Slick -->
-    <link rel="stylesheet" type="text/css" href="{{@asset('assets/css/slick.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{@asset('assets/css/slick-theme.css')}}">
-
-</head>
-
-<body>
-    <!-- Start Top Nav -->
-    @include('Zayshop.partials.topNav')
-    <!-- Close Top Nav -->
-
-
-    <!-- Header -->
-    @include('Zayshop.partials.header')
-    <!-- Close Header -->
-
-    <!-- Modal -->
-    @include('Zayshop.partials.modalSearch')
-
-
-
-    <!-- Open Content -->
-    <section class="bg-light">
+@endsection
+@section('content')
+<section class="bg-light">
         <div class="container pb-5">
             <div class="row">
                 <div class="col-lg-5 mt-5">
@@ -712,12 +687,12 @@
     <script src="{{@asset('assets/js/jquery-migrate-1.2.1.min.js')}}"></script>
     <script src="{{@asset('assets/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{@asset('assets/js/templatemo.js')}}"></script>
-    <script src="{{@asset('assets/js/custom.js')}}"></script>
+    <script src="{{@asset('assets/js/custom.js')}}"></script>  
     <!-- End Script -->
 
     <!-- Start Slider Script -->
     <script src="{{@asset('assets/js/slick.min.js')}}"></script>
-
+    
     <!-- End Slider Script -->
 
     <script>
