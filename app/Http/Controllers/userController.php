@@ -65,6 +65,7 @@ class UserController extends Controller
     
     public function insertProduct(Request $request)
     {
+        
         $validate = $request->validate([
             'name' => 'required|max:255',
             'img' => 'required',
@@ -76,11 +77,18 @@ class UserController extends Controller
     }
     public function editProduct($id)
     {
-
+        $category = Category::all(); 
         $product = Product::find($id);
         //dd($user);
-        return view('Admin.pages.forms.editProduct', compact(['product']));
+        return view('Admin.pages.forms.editProduct', compact(['product']))->with('category', $category);
     }
+    public function updateProduct(Request $request, $id)
+    {
+        $product = Product::findOrFail($id);
+        $product->update($request->all());
+        return redirect('/Admin/productTable');
+    }
+
     public function deleteProduct($id)
     {
         $product = Product::find($id);

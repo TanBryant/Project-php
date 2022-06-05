@@ -20,6 +20,7 @@
                 <span class="menu-title">Dashboard</span>
             </a>
         </li>
+        <!-- product -->
         <li class="nav-item menu-items">
             <a
                 class="nav-link"
@@ -46,36 +47,47 @@
                     <li class="nav-item">
                         <a
                             class="nav-link"
-                            href="pages/ui-features/dropdowns.html"
-                            >1</a
+                            href="{{url('/Admin/addProduct')}}"
+                            >Add Product</a
+                        >
+                    </li> 
+                </ul>
+            </div>
+        </li>
+        <!-- user -->
+        <li class="nav-item menu-items">
+            <a
+                class="nav-link"
+                data-toggle="collapse"
+                href="#ui-basic1"
+                aria-expanded="false"
+                aria-controls="ui-basic"
+            >
+                <span class="menu-icon">
+                    <i class="mdi mdi-laptop"></i>
+                </span>
+                <span class="menu-title">User</span>
+                <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic1">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="{{ url('/Admin/userTable') }}"
+                            >User List</a
                         >
                     </li>
                     <li class="nav-item">
                         <a
                             class="nav-link"
-                            href="pages/ui-features/typography.html"
-                            >2</a
+                            href="{{ url('/Admin/formAdd') }}"
+                            >Add Product</a
                         >
-                    </li>
+                    </li> 
                 </ul>
             </div>
-        </li>
-        <li class="nav-item menu-items">
-            <a class="nav-link" href="{{ url('/Admin/formAdd') }}">
-                <span class="menu-icon">
-                    <i class="mdi mdi-playlist-play"></i>
-                </span>
-                <span class="menu-title">Form Elements</span>
-            </a>
-        </li>
-        <li class="nav-item menu-items">
-            <a class="nav-link" href="{{ url('/Admin/userTable') }}">
-                <span class="menu-icon">
-                    <i class="mdi mdi-table-large"></i>
-                </span>
-                <span class="menu-title">Tables</span>
-            </a>
-        </li>
+        </li> 
         <li class="nav-item menu-items">
             <a class="nav-link" href="pages/charts/chartjs.html">
                 <span class="menu-icon">
@@ -84,14 +96,7 @@
                 <span class="menu-title">Charts</span>
             </a>
         </li>
-        <li class="nav-item menu-items">
-            <a class="nav-link" href="pages/icons/mdi.html">
-                <span class="menu-icon">
-                    <i class="mdi mdi-contacts"></i>
-                </span>
-                <span class="menu-title">Icons</span>
-            </a>
-        </li>
+        
         <li class="nav-item menu-items">
             <a
                 class="nav-link"
@@ -107,25 +112,7 @@
                 <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="auth">
-                <ul class="nav flex-column sub-menu">
-                    <li class="nav-item">
-                        <a
-                            class="nav-link"
-                            href="pages/samples/blank-page.html"
-                        >
-                            Blank Page
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/samples/error-404.html">
-                            404
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/samples/error-500.html">
-                            500
-                        </a>
-                    </li>
+                <ul class="nav flex-column sub-menu"> 
                     <li class="nav-item">
                         <a class="nav-link" href="pages/samples/login.html">
                             Login
@@ -139,16 +126,6 @@
                 </ul>
             </div>
         </li>
-        <li class="nav-item menu-items">
-            <a
-                class="nav-link"
-                href="http://www.bootstrapdash.com/demo/corona-free/jquery/documentation/documentation.html"
-            >
-                <span class="menu-icon">
-                    <i class="mdi mdi-file-document-box"></i>
-                </span>
-                <span class="menu-title">Documentation</span>
-            </a>
-        </li>
+         
     </ul>
 </nav>

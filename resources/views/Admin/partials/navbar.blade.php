@@ -69,8 +69,12 @@
                                 <i class="mdi mdi-logout text-danger"></i>
                             </div>
                         </div>
-                        <div class="preview-item-content">
-                            <a href="'/login'"><p class="preview-subject mb-1">Log out</p></a>
+                        <div class="preview-item-content" style="
+                                position: absolute;
+                                top: 51%;
+                                right: 28%; 
+                                        ">
+                            <a href="'/login'"><p class="preview-subject mb-1" style=" color: aliceblue; ">Log out</p></a>
                             
                         </div>
                     </a>

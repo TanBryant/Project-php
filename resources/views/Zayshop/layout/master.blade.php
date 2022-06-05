@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
 
     @yield('styles')
+    @yield('header')
 </head>
 
 <body>
@@ -38,7 +39,12 @@
     <!-- End Footer -->
 
     <!-- Start Script -->
-    @yield('scripts')
-    <!-- End Script 1
-
+<script src="assets/js/jquery-1.11.0.min.js"></script>
+<script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/templatemo.js"></script>
+<script src="assets/js/custom.js"></script>
+@yield('script')
+    
+</body>
 </html>

@@ -5,7 +5,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LoginController;
-
+use App\Http\Controllers\CartController;
+ 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -49,6 +50,15 @@ Route::delete('/Admin/user/{id}', [UserController::class, 'destroy']);
 //--route product
 Route::get('/Admin/addProduct', [UserController::class, 'viewProduct']);
 Route::get('/Admin/productTable', [UserController::class, 'productList']);
-Route::get('/Admin/{id}/editProduct', [UserController::class, 'editProduct','viewProduct']);
+Route::get('/Admin/{id}/editProduct', [UserController::class, 'editProduct']);
+Route::put('/Admin/updateProduct/{id}', [UserController::class, 'updateProduct']);
 Route::post('/Admin/insertProduct', [UserController::class, 'insertProduct']);
 Route::delete('/Admin/productTable/{id}', [UserController::class, 'deleteProduct']);
+
+
+// route cart
+Route::get('/Zayshop/viewCart', [CartController::class, 'viewCart']);
+//
+Route::get('/Admin/{id}/cartPage', [CartController::class, 'findProduct']);
+Route::get('/Admin/{id}/addCart', [CartController::class, 'AddCart']);
+

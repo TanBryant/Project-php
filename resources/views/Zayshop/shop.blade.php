@@ -15,9 +15,8 @@
     <link rel="stylesheet" href="{{@asset('assets/css/fontawesome.min.css')}}">
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-
-
-</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     </head>
 
 <body>
     <!-- Start Top Nav -->
@@ -108,8 +107,12 @@
                                 <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                     <ul class="list-unstyled">
                                         <li><a class="btn btn-success text-white" href="{{ url('/Zayshop/shop/shop-single') }}"><i class="far fa-heart"></i></a></li>
-                                        <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="far fa-eye"></i></a></li>
-                                        <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="fas fa-cart-plus"></i></a></li>
+                                        <li><a class="btn btn-success text-white mt-2" href="{{ url('/Admin/' . $key->id . '/cartPage') }}"><i class="far fa-eye"></i></a></li>
+                                        <li>
+                                            <a class="btn btn-success text-white mt-2" onclick="AddCart({{$key->id}})" href="javascript:">
+                                                <i class="fas fa-cart-plus"></i>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -563,13 +566,25 @@
     <!-- Start Footer -->
     @include('Zayshop.partials.footer')
     <!-- End Footer -->
-
+ 
     <!-- Start Script -->
-    <script src="{{@asset('assets/js/jquery-1.11.0.min.js')}}"></script>
-    <script src="{{@asset('assets/js/jquery-migrate-1.2.1.min.js')}}"></script>
-    <script src="{{@asset('assets/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{@asset('assets/js/templatemo.js')}}"></script>
-    <script src="{{@asset('assets/js/custom.js')}}"></script>
-    <!-- End Script -->
+    
+    <script src="{{@asset('/assets/js/jquery-3.3.1.min.js')}}"></script>
+     
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script --> 
+    <script>
+  function AddCart(id){
+            $.ajax({
+                url:'Admin/'+id+'/addCart', 
+                type:'GET',
+            }).done(function(response){
+                console.log(response);
+           } );
+        }
+</script>
 </body>
 </html>

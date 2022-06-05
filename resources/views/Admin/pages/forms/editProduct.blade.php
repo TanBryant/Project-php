@@ -29,7 +29,7 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Edit Product</h4> 
-                  <form class="forms-sample" action="{{ url('/Admin/'.$product->id) }}" method="POST">
+                  <form class="forms-sample" action="{{ url('/Admin/updateProduct/'.$product->id) }}" method="POST">
                   @method('put')
                     {!! csrf_field() !!}
                     <div class="form-group">
@@ -45,7 +45,7 @@
                       <input type="text" name="price" value="{{$product->price}}" class="form-control" id="exampleInputPassword4" placeholder="Price">
                     </div>
                     <div class="form-group">
-                      <label >Category_id</label>
+                      <label >Category Product</label>
                       <select class="form-control" value="{{$product->category_id}}" name="category_id" id="exampleSelectGender">
                          @foreach ($category as $key)
                          <option value="{{ $key->id }}"> {{ $key->name }}  </option> 
